@@ -113,6 +113,11 @@ class VimKeys(object):
         editor.setTextCursor(cursor)
         editor.setFocus()
 
+    def cw(self, repeat):
+        self.dw(repeat)
+        self.i(repeat)
+
+
     # %% Editing
     def u(self, repeat):
         for count in range(repeat):
